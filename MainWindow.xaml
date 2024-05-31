@@ -123,7 +123,7 @@
                 Grid.Row="5"
                 Grid.ColumnSpan="2" />
         <Button x:Name="pointButton"
-                Click="OperationButtonClicked"
+                Click="pointButton_Click"
                 Content="."
                 Margin="5"
                 Grid.Row="5"
