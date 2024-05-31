@@ -79,6 +79,8 @@ namespace WPF_CalculatorApp
         private void AcButton_Click(object sender, RoutedEventArgs e)
         {
             resultLabel.Content = "0";
+            _result = 0;
+            _lastNumber = 0;
         }
 
         private void OperationButtonClicked(object sender, RoutedEventArgs e)
