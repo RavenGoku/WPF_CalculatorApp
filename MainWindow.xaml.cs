@@ -70,10 +70,14 @@ namespace WPF_CalculatorApp
 
         private void NegativeButton_Click(object sender, RoutedEventArgs e)
         {
-            if (double.TryParse(resultLabel.Content.ToString(), out _lastNumber))
+            //Check if Label value is not zero negative zero
+            if (resultLabel.Content.ToString() != "0")
             {
-                _lastNumber = _lastNumber * -1;
-                resultLabel.Content = _lastNumber.ToString();
+                if (double.TryParse(resultLabel.Content.ToString(), out _lastNumber))
+                {
+                    _lastNumber = _lastNumber * -1;
+                    resultLabel.Content = _lastNumber.ToString();
+                }
             }
         }
 
